@@ -12,10 +12,9 @@ $(document).ready(function () {
 			}else if( $("#input.email").val() == "" || !valEmail.test($("#input-email").val()) ){
 	            $("#input-email").focus().after("<span class='error'>Ingrese un email válido</span>");
 	            return false;
-	        }else if( $("#input-password").val() == "" || $("#input-password").val() === "123456" || $("#input-password").val() === "098765" || $("#input-password").val().length < 6  ){
+	        }else if( $("#input-password").val() == "" || $("#input-password").val() === "123456" || $("#input-password").val() === "098765" || $("#input-password").val().length < 6 ){
 	            $("#input-password").focus().after("<span class='error'>Ingrese una contraseña válida que no sea 123456/098765 o que tenga menos de 6 caracteres</span>");
 	            return false;
 	        }
-	    });
-    
+	    }); 
 });
